@@ -15,7 +15,13 @@ body {
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 360px;
+    /*Default was set to 280px*/
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -27,3 +33,63 @@ textarea {
         padding: 0;
     }
 }
+
+.borderless {
+    border: none !important; 
+    padding: 0px !important;
+    
+}
+
+section {
+    padding-bottom: 175px;
+  
+}
+
+.ptcspacing {
+    padding:75px 0px
+}
+
+.ptccardspacing {
+    padding-top:75px
+}
+.textspacebottom{
+    padding-bottom: 35px
+}
+
+.img-with-text {
+    text-align: center;
+    width: 140px;
+}
+
+.img-with-text img {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+/*Ptc Custom Button*/
+
+.btn-ptc {
+    color: #ffffff;
+    background-color: #29ABE2;
+    border-color: #29ABE2;
+}
+
+    .btn-ptc:hover {
+        color: #fff;
+        background-color: #0077AA;
+        border-color: #0077AA;
+    }
+
+.divider {
+    width: 5px;
+    height: auto;
+    display: inline-block;
+}
+
+p.auto {
+  
+    hyphens: auto;
+}
+
+

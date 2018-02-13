@@ -2,19 +2,22 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
-<head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
 
+<html lang="en">
+<head runat="server"> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="category" content="Property Tax Consultants" />
+    <meta name="msvalidate.01" content="408B350F7C19A5ECB8231DC7D23322DA" />
+    <meta name = "Description" content ="Property tax consultants who help reduce property taxes and provide an array of property tax services including business personal property tax compliance."/>   
+    <title>Property Tax Reduction Experts | Paladin Tax Consultants, LLC</title>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
-</head>
+    <link href="Content/animate.css" rel="stylesheet" />
+   </head>
 <body>
     <form runat="server">
         <asp:ScriptManager runat="server">
@@ -38,49 +41,81 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %>!</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
-            </div>
+       <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Paladin Tax Consultants, LLC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Tax-Consultants"">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Property-Tax-Protest">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#How-To-Appeal-Property-Taxes"">Clients</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Business-Personal-Property">Arbitration</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Tax-Consultants-Near-Me">Contact</a>
+            </li>            
+          </ul>
+           
         </div>
-        <div class="container body-content">
+      </div>
+    </nav>
+
+
+
+
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+
+            <footer style="text-align: center">
+                <p>2018 © Paladin Tax Consultants, LLC. All rights reserved.</p>
+                <p style="font-size:9px">Paldadin Tax Consultatns, LLC is Regulated by The Texas Department of Licensing and Regulation<br>
+                    P.O Box 12157 | Austin, Texas 78711 | 1-800-803-9202<br>
+                    website: www.license.state.tx.us/complaints</p>
             </footer>
-        </div>
+     
     </form>
+
+
+
+      <script src="Scripts/jquery.easing.1.3.js"></script>
+      <script src="Scripts/scrolling-nav.js"></script>
+      
+
+    
+        <!-- Initialize Bootstrap functionality -->
+            <script>
+        // Initialize tooltip component
+        $(function () {
+         $('[data-toggle="tooltip"]').tooltip()
+            })
+
+        // Initialize popover component
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+                })
+
+       $(document).on('click', function () {
+                    $('.collapse').collapse('hide');
+                })
+</script> 
+    <script src="Scripts/site.js"></script>
+
+<!--<script> var _ctct_m = "76d26b26957bbbbe93edd8445cfb257d"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script> -->
+
+
+    
 </body>
 </html>

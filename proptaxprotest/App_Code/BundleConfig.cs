@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.UI;
 
-namespace proptaxprotest
+namespace ptc_website
 {
     public class BundleConfig
     {

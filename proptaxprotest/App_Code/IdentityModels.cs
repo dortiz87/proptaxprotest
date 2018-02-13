@@ -3,9 +3,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using System.Web;
 using System;
-using proptaxprotest;
+using ptc_website;
 
-namespace proptaxprotest
+namespace ptc_website
 {
     // You can add User data for the user by adding more properties to your User class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -30,7 +30,7 @@ namespace proptaxprotest
     }
 }
 
-namespace proptaxprotest
+namespace ptc_website
 {
     public static class IdentityHelper
     {

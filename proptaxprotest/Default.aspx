@@ -2,10 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <!DOCTYPE html>
-
-   <body>
     <div class="container body-content" id="page-top">
-        <img src="images/paladin_logo_v2.png" alt="business-personal-property-tax" class="img-fluid center-block animated bounceInDown">
+        <img itemprop="image" src="images/paladin_logo_v2.png" alt="business-personal-property-tax" class="img-fluid center-block animated bounceInDown">
     </div>	
         <img src="images/intro_banner.png"  alt="property-tax-consultants" class="img-fluid">
     <div class="jumbotron bg-light">
@@ -22,8 +20,6 @@
       </div>
     </div>
   </div>
- 
-
     <div class="jumbotron bg-white">
         <div class="container">
             <div class="row">
@@ -397,22 +393,22 @@
             <div class="text-center ptccardspacing">
                 <p class="lead" style="font-size:xx-large">Paladin Tax Consultants, LLC</p>
                 <address>
-                    555 W Bitters Suite 100<br />
-                    San Antonio, Tx 78216<br />
+                    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">555 W Bitters Suite 100</span><br />
+                    <span itemprop="addressLocality">San Antonio</span>, 
+                    <span itemprop="addressRegion">Tx</span>
+                    <span itemprop="postalCode">78216</span></span><br />
                     <abbr title="Phone">P:</abbr>
-                    210.776.1833<br />
+                    <span itemprop="telephone">210.776.1833</span><br />
                     <abbr title="Website">W:</abbr>
-                    proptaxprotest.com
-                </address>
-
-                <address>
-                    <strong>Support:</strong>   <a href="mailto:info@example.com">info@proptaxprotest.com</a><br />
+                    <span itemprop="url">proptaxprotest.com</span>
+                    </address>
+                    <address>
+                    <strong>Support:</strong>   <a href="mailto:info@example.com">
+                    <span itemprop="email">info@proptaxprotest.com</span></a><br/>
                 </address>
             </div>
     </div>
 
 </section>
-
-</body>
-</html>
     </asp:Content>

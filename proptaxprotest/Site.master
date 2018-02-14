@@ -7,7 +7,7 @@
 <head runat="server"> 
     <title>Property Tax Reduction Experts | Paladin Tax Consultants, LLC</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="category" content="Property Tax Consultants" />
     <meta name="msvalidate.01" content="408B350F7C19A5ECB8231DC7D23322DA" />
@@ -18,8 +18,30 @@
    </head>   
 <body>
     <form runat="server">
-       
+         <asp:ScriptManager runat="server">
+                <Scripts>
+                    <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                    <%--Framework Scripts--%>
+                    <asp:ScriptReference Name="MsAjaxBundle" />
+                    <asp:ScriptReference Name="jquery" />
+                    <asp:ScriptReference Name="bootstrap" />
+                    <asp:ScriptReference Name="respond" />
+                    <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                    <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                    <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                    <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                    <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                    <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                    <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                    <asp:ScriptReference Name="WebFormsBundle" />
+                    <%--Site Scripts--%>
+                </Scripts>
+            </asp:ScriptManager>
 
+            <asp:PlaceHolder runat="server">
+                <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>           
        <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
@@ -63,34 +85,8 @@
                     P.O Box 12157 | Austin, Texas 78711 | 1-800-803-9202<br>
                     website: www.license.state.tx.us/complaints</p>
             </footer>
-
+    </form>
     
-     <asp:ScriptManager runat="server">
-        <Scripts>
-            <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-            <%--Framework Scripts--%>
-            <asp:ScriptReference Name="MsAjaxBundle" />
-            <asp:ScriptReference Name="jquery" />
-            <asp:ScriptReference Name="bootstrap" />
-            <asp:ScriptReference Name="respond" />
-            <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-            <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-            <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-            <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-            <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-            <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-            <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-            <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-            <asp:ScriptReference Name="WebFormsBundle" />
-            <%--Site Scripts--%>
-        </Scripts>
-    </asp:ScriptManager>
-
-        <asp:PlaceHolder runat="server">
-            <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
-
-</form>
       <script src="Scripts/jquery.easing.1.3.js"></script>
       <script src="Scripts/scrolling-nav.js"></script>
       
@@ -98,20 +94,20 @@
     
         <!-- Initialize Bootstrap functionality -->
             <script>
-        // Initialize tooltip component
-        $(function () {
-         $('[data-toggle="tooltip"]').tooltip()
-            })
-
-        // Initialize popover component
-        $(function () {
-          $('[data-toggle="popover"]').popover()
+                // Initialize tooltip component
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
                 })
 
-       $(document).on('click', function () {
+                // Initialize popover component
+                $(function () {
+                    $('[data-toggle="popover"]').popover()
+                })
+
+                $(document).on('click', function () {
                     $('.collapse').collapse('hide');
                 })
-</script> 
+            </script> 
     <script src="Scripts/site.js"></script>
 
 <!--<script> var _ctct_m = "76d26b26957bbbbe93edd8445cfb257d"; </script>

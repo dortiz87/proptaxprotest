@@ -5,21 +5,21 @@
 
 <html lang="en">
 <head runat="server"> 
+    <title>Property Tax Reduction Experts | Paladin Tax Consultants, LLC</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="category" content="Property Tax Consultants" />
     <meta name="msvalidate.01" content="408B350F7C19A5ECB8231DC7D23322DA" />
     <meta name = "Description" content ="Property tax consultants who help reduce property taxes and provide an array of property tax services including business personal property tax compliance."/>   
-    <title>Property Tax Reduction Experts | Paladin Tax Consultants, LLC</title>
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
+    
+    
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="Content/animate.css" rel="stylesheet" />
    </head>
 <body>
-    <form runat="server">
+    
        
 
        <!-- Navigation -->
@@ -65,7 +65,8 @@
                     P.O Box 12157 | Austin, Texas 78711 | 1-800-803-9202<br>
                     website: www.license.state.tx.us/complaints</p>
             </footer>
-    
+
+    <form runat="server">
      <asp:ScriptManager runat="server">
         <Scripts>
             <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -86,6 +87,10 @@
             <%--Site Scripts--%>
         </Scripts>
     </asp:ScriptManager>
+
+        <asp:PlaceHolder runat="server">
+            <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
 
 </form>
       <script src="Scripts/jquery.easing.1.3.js"></script>

@@ -132,7 +132,7 @@
                                     Daniel joined Paladin Tax Consultants in 2018 as the Chief Information Officer as well as a practicing Property Tax Consultant. Daniel’s primary responsibilities include new business development, research and development, maintaining the firm’s databases and servicing our clients property tax needs.
                                         <br /> 
                                     <br /> 
-                                    Having served 8 years in the U.S Army, he is a proud combat veteran of Operation Iraqi Freedom (OIF). During his tenure in the military, Daniel earned a bachelor’s of business administration in Real Estate Finance and Development from The University of Texas in San Antonio where he graduated with Business Honors in 2012.
+                                    Having served 8 years in the U.S Army, he is a proud combat veteran of Operation Iraqi Freedom (OIF). During his tenure in the military, Daniel earned a bachelor’s of business administration in Real Estate Finance and Development from The University of Texas at San Antonio where he graduated with Business Honors in 2012.
                                         <br />    
                                     <br /> 
                                     Prior to joining Paladin, Daniel worked at Scott B. Retzloff & Associates - a property tax consulting firm based out of San Antonio, TX. During his tenure, he lead the information technology department where he became an expert in understanding the data used by appraisal districts to value real estate. Because of this, he was able to help secure millions of dollars in tax savings for their clients. He was also responsible for producing due diligence reports for acquisitions and new development as well as providing agricultural use roll back estimates for Texas clients.
@@ -359,8 +359,8 @@
                         <form class="needs-validation" novalidate>
                             <div class="form-group">
                                 <label class="sr-only">Property Name</label>
-                                <asp:TextBox ID="PropertyTB" runat="server" CssClass="form-control" placeholder="Property" />
-                                <asp:RequiredFieldValidator ID="rfvPropertyTB" runat="server" ControlToValidate="PropertyTB" ErrorMessage="Property name is required" CssClass="invalid-feedback" Display="Dynamic" />
+                                <asp:TextBox ID="PropertyTB" runat="server" CssClass="form-control" placeholder="Property Address" />
+                                <asp:RequiredFieldValidator ID="rfvPropertyTB" runat="server" ControlToValidate="PropertyTB" ErrorMessage="Property Address is required" CssClass="invalid-feedback" Display="Dynamic" />
                             </div>
                             <div class="form-group">
                                 <label class="sr-only">First Name</label>
@@ -400,7 +400,9 @@
                     555 W Bitters Suite 100<br />
                     San Antonio, Tx 78216<br />
                     <abbr title="Phone">P:</abbr>
-                    210.776.1833
+                    210.776.1833<br />
+                    <abbr title="Website">W:</abbr>
+                    proptaxprotest.com
                 </address>
 
                 <address>

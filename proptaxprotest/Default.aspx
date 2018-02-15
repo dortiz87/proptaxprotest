@@ -7,13 +7,13 @@
     <img src="images/intro_banner.png" alt="property-tax-consultants" class="img-fluid">
     <div class="jumbotron bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-lg-">
+            <div class="row text-center">
+                <div class="col-xs-12 col-lg-12">
                     <h2>Call Us Today To Handle Your Property Tax Needs 210.776.1833</h2>
                     <br />
                     <p class="lead">Email Us For a Free Analysis Of Your Property</p>
                 </div>
-                <div class=" text-center col-sm-6 col-lg-3 col-sm-offset-3 col-md-3 col-xs-offset-4 col-xs-5 col-lg-offset-0">
+                <div class="col-sm-6 col-lg-3 col-sm-offset-3 col-md-3 col-xs-offset-4 col-xs-5 col-lg-offset-0 mx-auto">
                     <a class="btn  btn-block btn-lg btn-success" href="mailto:info@proptaxprotest.com" title="">Email Us!</a>
                 </div>
             </div>

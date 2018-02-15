@@ -16,7 +16,7 @@
     <link href="Content/animate.css" rel="stylesheet" />
    </head>   
 <body>
-    <form itemscope itemtype="http://schema.org/LocalBusiness" runat="server">
+    <form itemscope itemtype="http://schema.org/LocalBusiness" runat="server" class="needs-validation" novalidate>
          <asp:ScriptManager runat="server">
                 <Scripts>
                     <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -51,7 +51,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#Tax-Consultants"">About</a>
+              <a class="nav-link js-scroll-trigger" href="#Tax-Consultants">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#Property-Tax-Protest">Services</a>
@@ -79,7 +79,7 @@
             <hr />
 
             <footer style="text-align: center">
-                <p>2018 © Paladin Tax Consultants, LLC. All rights reserved.</p>
+                <p>© <%: DateTime.Now.Year %> Paladin Tax Consultants, LLC. All rights reserved.</p>
                 <p style="font-size:9px">Paldadin Tax Consultatns, LLC is Regulated by The Texas Department of Licensing and Regulation<br>
                     P.O Box 12157 | Austin, Texas 78711 | 1-800-803-9202<br>
                     website: www.license.state.tx.us/complaints</p>
@@ -111,8 +111,5 @@
 
 <!--<script> var _ctct_m = "76d26b26957bbbbe93edd8445cfb257d"; </script>
 <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script> -->
-
-
-    
 </body>
 </html>

@@ -16,7 +16,7 @@
     <link href="Content/animate.css" rel="stylesheet" />
    </head>   
 <body>
-    <form itemscope itemtype="http://schema.org/LocalBusiness" runat="server" class="needs-validation" novalidate>
+    <form itemscope itemtype="http://schema.org/LocalBusiness" runat="server" action='https://crm.zoho.com/crm/WebToLeadForm' name="WebToLeads3045557000000225114" method='POST' onsubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8'>
          <asp:ScriptManager runat="server">
                 <Scripts>
                     <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -108,6 +108,57 @@
                 })
             </script> 
     <script src="Scripts/site.js"></script>
+          <script>
+                var mndFileds = new Array('Last Name', 'LEADCF7', 'LEADCF10', 'LEADCF9');
+                var fldLangVal = new Array('Property Address', 'Full Name', 'Phone Number', 'Email');
+                var name = '';
+                var email = '';
+
+                /* Do not remove this code. */
+                function reloadImg() {
+                    if (document.getElementById('imgid').src.indexOf('&d') !== -1) {
+                        document.getElementById('imgid').src = document.getElementById('imgid').src.substring(0, document.getElementById('imgid').src.indexOf('&d')) + '&d' + new Date().getTime();
+                    } else {
+                        document.getElementById('imgid').src = document.getElementById('imgid').src + '&d' + new Date().getTime();
+                    }
+                }
+
+                function checkMandatory() {
+                    for (i = 0; i < mndFileds.length; i++) {
+                        var fieldObj = document.forms['WebToLeads3045557000000225114'][mndFileds[i]];
+                        if (fieldObj) {
+                            if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                                if (fieldObj.type == 'file') {
+                                    alert('Please select a file to upload.');
+                                    fieldObj.focus();
+                                    return false;
+                                }
+                                alert(fldLangVal[i] + ' cannot be empty.');
+                                fieldObj.focus();
+                                return false;
+                            } else if (fieldObj.nodeName == 'SELECT') {
+                                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                                    alert(fldLangVal[i] + ' cannot be none.');
+                                    fieldObj.focus();
+                                    return false;
+                                }
+                            } else if (fieldObj.type == 'checkbox') {
+                                if (fieldObj.checked == false) {
+                                    alert('Please accept  ' + fldLangVal[i]);
+                                    fieldObj.focus();
+                                    return false;
+                                }
+                            }
+                            try {
+                                if (fieldObj.name == 'Last Name') {
+                                    name = fieldObj.value;
+                                }
+                            } catch (e) { }
+                        }
+                    }
+                }
+
+                        </script>
 
 <!--<script> var _ctct_m = "76d26b26957bbbbe93edd8445cfb257d"; </script>
 <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script> -->

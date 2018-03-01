@@ -351,43 +351,80 @@
             </div>
             <div class="col text-center">
                 <p class="lead">We will gladly analyze your property for <strong>FREE</strong> to ensure your valuation is being assessed fairly by the Central Appraisal Districts(s)</p>
+                <br />
             </div>
             <asp:PlaceHolder ID="formPH" runat="server" Visible="true">
-                <div class="row text-center">
-                    <div class="card-body mx-auto col-md-4">
-                                            <!--Removed nested form (not allowed in asp.net removed class="needs-validation" novalidate-->
-                            <div class="form-group">
-                                <label class="sr-only">Property Name</label>
-                                <asp:TextBox ID="PropertyTB" runat="server" CssClass="form-control" placeholder="Property Address" />
-                                <asp:RequiredFieldValidator ID="rfvPropertyTB" runat="server" ControlToValidate="PropertyTB" ErrorMessage="Property Address is required" CssClass="invalid-feedback" Display="Dynamic" />
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only">First Name</label>
-                                <asp:TextBox ID="FNameTB" runat="server" CssClass="form-control" placeholder="First Name" />
-                                <asp:RequiredFieldValidator ID="rfvFNameTB" runat="server" ControlToValidate="FNameTB" ErrorMessage="First Name is required" CssClass="invalid-feedback" Display="Dynamic" />
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only">Last Name</label>
-                                <asp:TextBox ID="LNameTB" runat="server" CssClass="form-control" placeholder="Last Name" />
-                                <asp:RequiredFieldValidator ID="rfvLNameTB" runat="server" ControlToValidate="LNameTB" ErrorMessage="Last Name is required" CssClass="invalid-feedback" Display="Dynamic" />
-                            </div>
-                            <div class="form-group">
-                                <asp:TextBox ID="PhoneTB" runat="server" CssClass="form-control" placeholder="Phone Number" />
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="PhoneTB" ErrorMessage="Phone Number is required" CssClass="invalid-feedback" Display="Dynamic" />
-                            </div>
-                            <div class="form-group">
-                                <asp:TextBox ID="EmailTB" runat="server" CssClass="form-control" placeholder="Email" />
-                                <asp:RequiredFieldValidator ID="rfvEmailTB" runat="server" ControlToValidate="EmailTB" ErrorMessage="Email is required" CssClass="invalid-feedback" Display="Dynamic" />
-                            </div>
-                            <div class="form-group">
-                                <asp:TextBox ID="CommentsTB" runat="server" TextMode="multiline" Columns="50" Rows="5" CssClass="form-control" placeholder="Tell Us More" />
-                                <asp:RequiredFieldValidator ID="rfvCommentsTB" runat="server" ControlToValidate="CommentsTB" ErrorMessage="Please tell us a little more" CssClass="invalid-feedback" Display="Dynamic" />
-                            </div>
-                        <span id="lblText" runat="server"></span>
-                        <br />
-                        <asp:Button ID="SendEmail" runat="server" Text="Submit" CssClass="btn btn-success" OnClick="SendMail" PostBackUrl="#Tax-Consultants-Near-Me" />
+                <div id='crmWebToEntityForm' style='width: 600px; margin: auto;'>
+                    <meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+                    
+
+                        <!-- Do not remove this code. -->
+                        <input type='text' style='display: none;' name='xnQsjsdp' value='5efcea129874ff0d4f669bbc0ebd105905b7cc976bf1315f311343fcc42b61f0' />
+                        <input type='hidden' name='zc_gad' id='zc_gad' value='' />
+                        <input type='text' style='display: none;' name='xmIwtLD' value='def691a39ff63d753852def384a6896193542a218155e1a44cc683b8e395e85e' />
+                        <input type='text' style='display: none;' name='actionType' value='TGVhZHM=' />
+                        <input type='text' style='display: none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;www.proptaxprotest.com' />
+                        <!-- Do not remove this code. -->
+                        <style>
+                            tr, td {
+                                padding: 6px;
+                                border-spacing: 0px;
+                                border-width: 0px;
+                            }
+                        </style>
+                        <table class="mx-auto" style='width: 600px; background-color: white; color: black'>
+                            <tr class="form-group">
+                                <td style='white-space: nowrap; text-align: left;'>Phone Number<span style='color: red;'>*</span></td>
+                                <td  style='width: 250px;'>
+                                    <input class="form-control" type='text' maxlength='255' name='LEADCF7'/></td>
+                            </tr>
+
+                            <tr class="form-group">
+                                <td style='white-space: nowrap; text-align: left;'>Property Address<span style='color: red;'>*</span></td>
+                                <td style='width: 250px;'>
+                                    <input class="form-control" type='text' maxlength='80' name='Last Name' /></td>
+                            </tr>
+
+                            <tr class="form-group">
+                                <td style='white-space: nowrap; text-align: left;'>Phone Number<span style='color: red;'>*</span></td>
+                                <td style='width: 250px;'>
+                                    <input class="form-control" type='text' maxlength='30' name='LEADCF10' /></td>
+                            </tr>
+
+                            <tr class="form-group">
+                                <td style='white-space: nowrap; text-align: left';>Email<span style='color: red;'>*</span></td>
+                                <td style='width: 250px;'>
+                                    <input class="form-control" type='text' maxlength='100' name='LEADCF9' /></td>
+                            </tr>
+
+                            <tr class="form-group">
+                                <td style='white-space: nowrap; text-align: left;'>Description </td>
+                                <td>
+                                    <textarea class="form-control" name='Description' maxlength='32000'>&nbsp;</textarea></td>                           
+                                <tr>
+                                    <td style='white-space: nowrap; text-align: left; width: 200px;'>Enter the Captcha</td>
+                                    <td>
+                                        <input class="form-control" type='text' maxlength='80' name='enterdigest' /></td>
+                                </tr>
+
+                            <tr>
+                                <td></td>
+                                <!-- Do not remove this code. -->
+                                <td style="text-align: center";>
+                                    <img id='imgid' src='https://crm.zoho.com/crm/CaptchaServlet?formId=def691a39ff63d753852def384a6896193542a218155e1a44cc683b8e395e85e&grpid=5efcea129874ff0d4f669bbc0ebd105905b7cc976bf1315f311343fcc42b61f0'>
+                                    <a href='javascript:;' onclick='reloadImg()'>Reload</a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="mx-auto" colspan='2' style='text-align: center; padding-top: 15px;'>
+                                    <input class="btn btn-ptc"type='submit' value='Submit' />
+                                    <input class="btn btn-ptc" type='reset' value='Reset' />
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                </div>
+                    <!-- Do not remove this code. -->
+                    <iframe name='captchaFrame' style='display: none;'></iframe>
             </asp:PlaceHolder>
             <asp:PlaceHolder ID="sucessPH" runat="server" Visible="false">
                 <div class="col text-center ptcspacing shake" style="color: forestgreen">

@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row ptcspacing">
                 <div class="col-lg-12 col-xs-12 mx-auto border-bottom">
-                    <h1 class="display-4"><i>OUR COMPANY</i></h1>
+                    <p class="lead" style="font-size: 3em">OUR COMPANY</p>
                 </div>
                 <div>&nbsp</div>
                 <div class="col-lg-12 col-xs-12 text-justify">
@@ -144,7 +144,7 @@
         <div class="container">
             <div class="row ptcspacing">
                 <div class="col-lg-12 col-xs-12 mx-auto border-bottom">
-                    <h1 class="display-4"><i>WHAT WE OFFER OUR CLIENTS</i></h1>
+                    <p class="lead" style="font-size: 3em">WHAT WE OFFER OUR CLIENTS</p>
                 </div>
                 <div>&nbsp</div>
                 <div class="col-lg-12 col-xs-12 text-justify center-block">
@@ -189,7 +189,7 @@
         <div class="container">
             <div class="row ptcspacing">
                 <div class="col-lg-12 col-xs-12 mx-auto border-bottom">
-                    <h1 class="display-4"><i>OUR CLIENTS</i></h1>
+                    <p class="lead" style="font-size: 3em">OUR CLIENTS</p>
                 </div>
                 <div>&nbsp</div>
                 <div class="col-lg-12 col-xs-12 mx-auto text-justify">
@@ -231,6 +231,25 @@
                         </div>
                     </div>
                 </div>
+            
+                
+                  <div class="card ptccardspacing pull-left" style="border:none">
+                      <p class="lead card-title text-center" style="font-size: 2em">OUR KEY TEXAS MARKETS</p>
+                            <ul class="card-text">
+                                <li>Corpus Christi | Nueces County</li>
+                                <li>San Antonio | Bexar County</li>
+                                <li>San Marcos | Hays County</li>
+                                <li>Laredo | Webb County</li>
+                                <li>Victoria | Victoria County</li>
+                                <li>Rio Grande Valley | Hidalgo County</li>
+                                <li>Austin, Texas | Travis County</li>                               
+                            </ul>
+                        </div>
+                <div class="ptccardspacing"><p style="font-size: 1.25em"><i>Our reach expands all across Texas including the following Counties and surrounding areas:</i></p>
+                      <ul>
+                          <li>San Patricio County, Bell County, Guadalupe County, Comal County, Cameron County, Willacy County, Starr County, Midland County, Ector County</li>
+                      </ul></div>
+                
             </div>
         </div>
     </section>
@@ -239,7 +258,7 @@
         <div class="container">
             <div class="row ptcspacing">
                 <div class="col-lg-12 col-xs-12 mx-auto border-bottom">
-                    <h1 class="display-4"><i>BINDING ARBITRATION</i></h1>
+                    <p class="lead" style="font-size: 3em">BINDING ARBITRATION</p>            
                 </div>
                 <div>&nbsp</div>
                 <div class="col-lg-12 col-xs-12 mx-auto text-justify textspacebottom">

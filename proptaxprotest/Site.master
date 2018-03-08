@@ -80,7 +80,7 @@
 
             <footer style="text-align: center">
                 <p>© <%: DateTime.Now.Year %> Paladin Tax Consultants, LLC. All rights reserved.</p>
-                <p style="font-size:9px">Paldadin Tax Consultatns, LLC is Regulated by The Texas Department of Licensing and Regulation<br>
+                <p style="font-size:9px">Paldadin Tax Consultants, LLC is Regulated by The Texas Department of Licensing and Regulation<br>
                     P.O Box 12157 | Austin, Texas 78711 | 1-800-803-9202<br>
                     website: www.license.state.tx.us/complaints</p>
             </footer>

@@ -4,6 +4,9 @@
     <div class="container body-content" id="page-top">
         <img itemprop="image" src="images/paladin_logo_v2.png" alt="business-personal-property-tax" class="img-fluid center-block animated bounceInDown">
     </div>
+    <div class="alert alert-success" role="alert">
+  <div class="lead text-center" style="font-size: 1.75em">Special Residential Promotion 35% Contingency-Fee of Tax Savings ZERO flat fees <p class="lead mx-auto" style="font-size: .50em">**Some Restrictions Apply**</p></div>
+</div>
     <img src="images/intro_banner.png" alt="property-tax-consultants" class="img-fluid">
     <div class="jumbotron bg-light">
         <div class="container">

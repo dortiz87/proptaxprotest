@@ -430,7 +430,7 @@
                     <span itemprop="url">proptaxprotest.com</span>
                 </address>
                 <address>
-                    <strong>Support:</strong>   <a href="mailto:info@example.com">
+                    <strong>Support:</strong>   <a href="mailto:info@proptaxprotest.com">
                         <span itemprop="email">info@proptaxprotest.com</span></a><br />
                 </address>
             </div>

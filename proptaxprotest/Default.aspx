@@ -4,9 +4,9 @@
     <div class="container body-content" id="page-top">
         <img itemprop="image" src="images/paladin_logo_v2.png" alt="business-personal-property-tax" class="img-fluid center-block animated bounceInDown">
     </div>
-    <div class="alert alert-success" role="alert">
- <!-- uncomment when running promotion <div class="lead text-center" style="font-size: 1.75em">Special Residential Promotion 35% Contingency-Fee of Tax Savings ZERO flat fees <p class="lead mx-auto" style="font-size: .50em">**Some Restrictions Apply**</p></div>-->
-</div>
+   <!-- uncomment when running promotion <div class="alert alert-success" role="alert">
+  <div class="lead text-center" style="font-size: 1.75em">Special Residential Promotion 35% Contingency-Fee of Tax Savings ZERO flat fees <p class="lead mx-auto" style="font-size: .50em">**Some Restrictions Apply**</p></div>
+</div>-->
     <img src="images/intro_banner.png" alt="property-tax-consultants" class="img-fluid">
     <div class="jumbotron bg-light">
         <div class="container">
@@ -67,11 +67,13 @@
                     <h3 class="card-title text-center lead" style="padding: 10px"><b>Frank L. Thomas</b></h3>
                     <div class="card-body">
                         <div class="card-text text-center">
+                            <p> </p>
                             <!--<a href="mailto:info@proptaxprotest.com">frank@proptaxprotest.com</a>-->
                             <p>Retired</p>
                             <!--<a href="vcards/Frank Thomas.vcf">
                                 <p class="no-padding"><small>Download vCard</small></p>
                             </a>-->
+                            <p> </p><br /><br />
                             <br />
 
                             <button class="btn btn-ptc" type="button" data-toggle="collapse" data-target="#frankbio" aria-expanded="false" aria-controls="frankbio">Read Bio</button>

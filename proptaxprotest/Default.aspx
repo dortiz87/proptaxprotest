@@ -5,7 +5,7 @@
         <img itemprop="image" src="images/paladin_logo_v2.png" alt="business-personal-property-tax" class="img-fluid center-block animated bounceInDown">
     </div>
     <div class="alert alert-success" role="alert">
-  <div class="lead text-center" style="font-size: 1.75em">Special Residential Promotion 35% Contingency-Fee of Tax Savings ZERO flat fees <p class="lead mx-auto" style="font-size: .50em">**Some Restrictions Apply**</p></div>
+ <!-- uncomment when running promotion <div class="lead text-center" style="font-size: 1.75em">Special Residential Promotion 35% Contingency-Fee of Tax Savings ZERO flat fees <p class="lead mx-auto" style="font-size: .50em">**Some Restrictions Apply**</p></div>-->
 </div>
     <img src="images/intro_banner.png" alt="property-tax-consultants" class="img-fluid">
     <div class="jumbotron bg-light">
@@ -31,8 +31,8 @@
                     <ul class="lead">
                         <li>January 1st - Assessment Date</li>
                         <li>April to May – Valuation notices mailed</li>
-                        <li>April 1st <span class="badge badge-danger">Date Change for 2018</span> – Business personal property renditions must be filed (however, an automatic 30 day extension will be granted upon request, and an additional 15 day extension may be granted by the appraisal district upon request and showing good cause)</li>
-                        <li>May 15 <span class="badge badge-danger">Date Change for 2018</span> or 30 days after valuation notices mailed, whichever occurs later – Appeal deadline</li>
+                        <li>April 1st – Business personal property renditions must be filed (however, an automatic 30 day extension will be granted upon request, and an additional 15 day extension may be granted by the appraisal district upon request and showing good cause)</li>
+                        <li>May 15 or 30 days after valuation notices mailed, whichever occurs later – Appeal deadline</li>
                         <li>October to November – Tax bills mailed</li>
                         <li>February 1 of following year – Taxes become delinquent</li>
                     </ul>
@@ -67,11 +67,11 @@
                     <h3 class="card-title text-center lead" style="padding: 10px"><b>Frank L. Thomas</b></h3>
                     <div class="card-body">
                         <div class="card-text text-center">
-                            <a href="mailto:info@proptaxprotest.com">frank@proptaxprotest.com</a>
-                            <p>Office: 210.776.1833</p>
-                            <a href="vcards/Frank Thomas.vcf">
+                            <!--<a href="mailto:info@proptaxprotest.com">frank@proptaxprotest.com</a>-->
+                            <p>Retired</p>
+                            <!--<a href="vcards/Frank Thomas.vcf">
                                 <p class="no-padding"><small>Download vCard</small></p>
-                            </a>
+                            </a>-->
                             <br />
 
                             <button class="btn btn-ptc" type="button" data-toggle="collapse" data-target="#frankbio" aria-expanded="false" aria-controls="frankbio">Read Bio</button>

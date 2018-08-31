@@ -411,6 +411,7 @@
                         <br />
                         <asp:Button ID="SendEmail" runat="server" Text="Submit" CssClass="btn btn-success" OnClick="SendMail" PostBackUrl="#Tax-Consultants-Near-Me" />
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LdBP20UAAAAAEObGo_oZJQfur1exVlj7KJSj3Kl"></div>
                 </div>
             </asp:PlaceHolder>
             <asp:PlaceHolder ID="sucessPH" runat="server" Visible="false">

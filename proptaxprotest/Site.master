@@ -13,7 +13,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-118597998-1');
 </script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <title>Property Tax Reduction Experts | Paladin Tax Consultants, LLC</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -118,6 +118,10 @@
                 })
             </script> 
     <script src="Scripts/site.js"></script>
+
+    <!-- reCAPTCHA Callback functions Begin-->
+   
+    <!-- reCAPTCHA Callback funtions End-->
 
 <!-- Begin Constant Contact Active Forms
 <script> var _ctct_m = "76d26b26957bbbbe93edd8445cfb257d"; </script>
